@@ -181,7 +181,7 @@ client.on('group-participants-update', async (anu) => {
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isWelkom = isGroup ? bienvenida.includes(from) : false
 			//const isNsfw = isGroup ? nsfw.includes(from) : fals
-		 = isGroup ? samih.includes(from) : false
+		 //= isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isUrl = (url) => {
 			    return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
