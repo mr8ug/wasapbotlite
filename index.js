@@ -522,6 +522,9 @@ client.on('group-participants-update', async (anu) => {
 						console.log(color('[ERROR]','red'), 'Commando sin Registro: ', color(sender.split('@')[0]))
 						if (contador >=150){
 							reply('Si no me usan me voy a mimir >:u')
+							contador=0
+						}else{
+							contador=contador+1
 						}
 
 					}
